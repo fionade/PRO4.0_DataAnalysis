@@ -22,7 +22,7 @@ shinyServer(function(input, output) {
     # date filter
     subset <- subset(data, data$timestamp >= as.POSIXct(min_date) & data$timestamp <= as.POSIXct(max_date))
     # time of day filter
-    subset <- subset(subset, data$hour >= min_time & data$hour <= max_time)
+    subset <- subset(subset, subset$hour >= min_time & subset$hour <= max_time)
     xdata <- subset[,xcol]
     ydata <- subset[,ycol]
     
