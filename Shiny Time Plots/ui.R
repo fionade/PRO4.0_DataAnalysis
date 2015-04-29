@@ -1,5 +1,21 @@
 library(shiny)
 
+if (!(exists("laser"))) {
+  laser <- data.frame()
+}
+
+if (!(exists("printer"))) {
+  printer <- data.frame()
+}
+
+if (!(exists("cnc"))) {
+  cnc <- data.frame()
+}
+
+if (!(exists("room"))) {
+  room <- data.frame()
+}
+
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
   
@@ -17,15 +33,20 @@ shinyUI(fluidPage(
                      startview = "month", weekstart = 0, language = "en",
                      separator = " to "),
       sliderInput("hour_range", label= h3("Hours of the day"),
-                  min = 0, max = 24, value = c(14, 15),
-                  post = "h"),
+                  min = 0, max = 24, value = c(14, 15)),
       checkboxGroupInput("printerVar", label = h3("3D printer sensors"),
                    choices = colnames(printer)[4:ncol(printer)-1],
                    selected = "acc_board_x"
       ),
+      checkboxGroupInput("cncVar", label = h3("CNC mill sensors"),
+                         choices = colnames(cnc)[4:ncol(cnc)-1]
+      ),
       checkboxGroupInput("laserVar", label = h3("Laser cutter sensors"),
                    choices = colnames(laser)[4:ncol(laser)-1],
                    selected = "current"
+      ),
+      checkboxGroupInput("roomVar", label = h3("Room sensors"),
+                         choices = colnames(room)[4:ncol(room)-1]
       )
     ),
     
