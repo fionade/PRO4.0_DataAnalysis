@@ -1,19 +1,19 @@
 library(shiny)
 
 if (!(exists("laser"))) {
-  laser <- data.frame()
+  laser <- data.frame(none = 0)
 }
 
 if (!(exists("printer"))) {
-  printer <- data.frame()
+  printer <- data.frame(none = 0)
 }
 
 if (!(exists("cnc"))) {
-  cnc <- data.frame()
+  cnc <- data.frame(none = 0)
 }
 
 if (!(exists("room"))) {
-  room <- data.frame()
+  room <- data.frame(none = 0)
 }
 
 # Define UI for application that draws a histogram
