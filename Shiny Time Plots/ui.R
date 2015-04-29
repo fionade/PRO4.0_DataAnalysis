@@ -10,13 +10,15 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       dateRangeInput("date_range", label = h3("Date"),
-                     start = min(min(laser$timestamp), min(printer$timestamp)),
-                     end = max(max(laser$timestamp), max(printer$timestamp)),
+                     start = "2015-04-16",
+                     min = min(min(laser$timestamp), min(printer$timestamp)),
+                     max = max(max(laser$timestamp), max(printer$timestamp)),
                      format = "yyyy-mm-dd",
                      startview = "month", weekstart = 0, language = "en",
                      separator = " to "),
       sliderInput("hour_range", label= h3("Hours of the day"),
-                  min = 0, max = 24, value = c(0, 24)),
+                  min = 0, max = 24, value = c(14, 15),
+                  post = "h"),
       checkboxGroupInput("printerVar", label = h3("3D printer sensors"),
                    choices = colnames(printer)[4:ncol(printer)-1],
                    selected = "acc_board_x"

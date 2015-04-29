@@ -2,6 +2,14 @@ library(shiny)
 library(ggplot2)
 library(reshape2)
 
+# timeFilter <- function(data.frame, var, min, max) {
+#   return(subset(data.frame, data.frame$var >= min & data.frame$var <= max))
+# }
+# 
+# sensorFilter <- function() {
+#   
+# }
+
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
   
