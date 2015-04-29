@@ -10,9 +10,13 @@ laser$timestamp <- as.POSIXct(laser$timestamp, format="%Y-%m-%d %H:%M:%S")
 
 
 # #### IMPORT ROOM DATA ####
-# room <- read.csv("room.csv", header=TRUE)
-# room$timestamp <- as.POSIXct(room$timestamp, format="%Y-%m-%d %H:%M:%S")
-# 
-# #### IMPORT CNC DATA ####
-# cnc <- read.csv("cnc.csv", header=TRUE)
-# cnc$timestamp <- as.POSIXct(cnc$timestamp, format="%Y-%m-%d %H:%M:%S")
+room <- read.csv("room.csv", header=TRUE)
+room$timestamp <- as.POSIXct(room$timestamp, format="%Y-%m-%d %H:%M:%S")
+
+#### IMPORT CNC DATA ####
+cnc <- read.csv("cnc.csv", header=TRUE)
+cnc$timestamp <- as.POSIXct(cnc$timestamp, format="%Y-%m-%d %H:%M:%S")
+
+#### IMPORT SURVEY DATA ####
+survey <- read.csv("survey.csv", header=TRUE)
+survey$timestmp <- as.POSIXct(survey$timestamp, format="%Y-%m-%d %H:%M:%S")
