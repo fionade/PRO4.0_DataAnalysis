@@ -9,9 +9,10 @@ colnames(laser) <- c("row_name", "timestamp", "current", "gas1_MQ9", "gas2_MQ2",
 laser$timestamp <- as.POSIXct(laser$timestamp, format="%Y-%m-%d %H:%M:%S")
 
 
-#### IMPORT ROOM DATA ####
-room <- read.csv("room.csv", header=TRUE)
-room$timestamp <- as.POSIXct(room$timestamp, format="%Y-%m-%d %H:%M:%S")
-
-
-#### IMPORT CNC DATA ####
+# #### IMPORT ROOM DATA ####
+# room <- read.csv("room.csv", header=TRUE)
+# room$timestamp <- as.POSIXct(room$timestamp, format="%Y-%m-%d %H:%M:%S")
+# 
+# #### IMPORT CNC DATA ####
+# cnc <- read.csv("cnc.csv", header=TRUE)
+# cnc$timestamp <- as.POSIXct(cnc$timestamp, format="%Y-%m-%d %H:%M:%S")
