@@ -20,7 +20,7 @@ if (!(exists("room"))) {
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Correlation Analysis"),
+  titlePanel("Time Series Analysis"),
   
   # Sidebar with a slider input for the number of bins
   sidebarLayout(

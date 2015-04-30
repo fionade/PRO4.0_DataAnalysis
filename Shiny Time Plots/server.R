@@ -61,7 +61,7 @@ shinyServer(function(input, output) {
     print(ggplot(data)
           + geom_line(aes(x = timestamp, y=value, group=variable, colour=variable))
           + ylim(0, 1023)
-          + geom_point(data=survey_subset, aes(x = timestamp, y = pseudoValue, shape=Outcome),
+          + geom_point(data=survey_subset, aes(x = timestamp, y = pseudoValue, shape=machineOutcome),
                        size = 4)
           )
   })
