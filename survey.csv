@@ -1,41 +1,41 @@
-"","ID","Machine","Date","StartTime","EndTime","UsageCount","Purpose","Outcome","Source","timestamp","pseudoValue","hour"
-"1",1,"3D","21.04.2015","15:30","15:50","never","education","as expected","internet",2015-04-21 15:50:00,500,15
-"2",2,"cnc","02.04.2015","","20:00","at least 3 times","","not ideal","self",2015-04-02 20:00:00,400,20
-"3",3,"laser","16.04.2015","","14:00","never","other","as expected","self",2015-04-16 14:00:00,500,14
-"4",4,"3D","07.04.2015","","21:15","never","","as expected","internet",2015-04-07 21:15:00,500,21
-"5",5,"laser","07.04.2015","","22:10","at least once","","as expected","self",2015-04-07 22:10:00,500,22
-"6",6,"3D","","","","never","","as expected","self",NA,500,NA
-"7",7,"laser","07.04.2015","21:40","21:45","never","","not usable","self",2015-04-07 21:45:00,300,21
-"8",8,"laser","07.04.2015","20:40","21:33","at least once","","as expected","self",2015-04-07 21:33:00,500,21
-"9",9,"laser","07.04.2015","","","at least 3 times","","as expected","self",NA,500,NA
-"10",10,"3D","","14:20","15:20","never","other","not ideal","internet",NA,400,NA
-"11",11,"3D","09.04.2015","","19:00","at least 3 times","","as expected","self",2015-04-09 19:00:00,500,19
-"12",12,"laser","21.04.2015","","15:15","at least once","other","as expected","self",2015-04-21 15:15:00,500,15
-"13",13,"laser","09.04.2015","","18:05","","","as expected","self",2015-04-09 18:05:00,500,18
-"14",14,"laser","09.04.2015","","17:57","at least 3 times","other","as expected","self",2015-04-09 17:57:00,500,17
-"15",15,"laser","08.04.2015","16:45","17:06","at least 3 times","business","as expected","self",2015-04-08 17:06:00,500,17
-"16",16,"laser","09.04.2015","","16:43","at least once","","as expected","self",2015-04-09 16:43:00,500,16
-"17",17,"laser","08.04.2015","17:40","17:50","at least 3 times","business","as expected","other",2015-04-08 17:50:00,500,17
-"18",18,"laser","09.04.2015","","15:00","at least 3 times","other","as expected","self",2015-04-09 15:00:00,500,15
-"19",19,"laser","02.04.2015","","","at least 3 times","","as expected","self",NA,500,NA
-"20",20,"3D","09.04.015","","15:30","at least once","","as expected","self",0015-04-09 15:30:00,500,15
-"21",21,"laser","19.03.2015","","18:07","at least 3 times","other","as expected","self",2015-03-19 18:07:00,500,18
-"22",22,"cnc","19.03.2015","","17:25","at least once","","as expected","self",2015-03-19 17:25:00,500,17
-"23",23,"laser","26.03.2015","","14:30","at least 3 times","","as expected","self",2015-03-26 14:30:00,500,14
-"24",24,"3D","26.03.2015","","15:49","at least 3 times","","as expected","self",2015-03-26 15:49:00,500,15
-"25",25,"cnc","26.03.2015","","18:00","at least once","","not ideal","self",2015-03-26 18:00:00,400,18
-"26",26,"laser","31.03.2015","","15:00","never","","as expected","self",2015-03-31 15:00:00,500,15
-"27",27,"laser","31.03.2015","","","never","","as expected","self",NA,500,NA
-"28",28,"laser","31.03.2015","","17:06","never","","as expected","self",2015-03-31 17:06:00,500,17
-"29",29,"laser","31.03.2015","","15:20","never","","as expected","self",2015-03-31 15:20:00,500,15
-"30",30,"laser","31.03.2015","","18:10","at least once","","as expected","self",2015-03-31 18:10:00,500,18
-"31",31,"laser","02.04.2015","","15:09","never","","as expected","self",2015-04-02 15:09:00,500,15
-"32",32,"cnc","02.04.2015","","16:22","at least 3 times","","as expected","self",2015-04-02 16:22:00,500,16
-"33",33,"laser","02.04.2015","","17:19","at least 3 times","","as expected","self",2015-04-02 17:19:00,500,17
-"34",34,"3D","07.04.2015","","18:30","at least 3 times","","as expected","self",2015-04-07 18:30:00,500,18
-"36",36,"laser","16.04.2015","","18:20","never","education","as expected","self",2015-04-16 18:20:00,500,18
-"37",37,"laser","23.04.2015","","18:54","never","other","as expected","self",2015-04-23 18:54:00,500,18
-"38",38,"laser","23.04.2015","","18:37","never","other","not ideal","self",2015-04-23 18:37:00,400,18
-"39",39,"laser","16.04.2015","","17:30","never","other","as expected","self",2015-04-16 17:30:00,500,17
-"40",40,"laser","23.04.2015","","15:45","never","business","as expected","self",2015-04-23 15:45:00,500,15
-"41",41,"laser","23.04.2015","","18:25","at least 3 times","other","as expected","self",2015-04-23 18:25:00,500,18
+"ID","Machine","Date","StartTime","EndTime","UsageCount","Purpose","Outcome","Source","timestamp","pseudoValue","hour","machineOutcome"
+1,"3D","21.04.2015","15:30","15:50","never","education","as expected","internet",2015-04-21 15:50:00,500,15,"3D as expected"
+2,"cnc","02.04.2015","","20:00","at least 3 times","","not ideal","self",2015-04-02 20:00:00,400,20,"cnc not ideal"
+3,"laser","16.04.2015","","14:00","never","other","as expected","self",2015-04-16 14:00:00,500,14,"laser as expected"
+4,"3D","07.04.2015","","21:15","never","","as expected","internet",2015-04-07 21:15:00,500,21,"3D as expected"
+5,"laser","07.04.2015","","22:10","at least once","","as expected","self",2015-04-07 22:10:00,500,22,"laser as expected"
+6,"3D","","","","never","","as expected","self",NA,500,NA,"3D as expected"
+7,"laser","07.04.2015","21:40","21:45","never","","not usable","self",2015-04-07 21:45:00,300,21,"laser not usable"
+8,"laser","07.04.2015","20:40","21:33","at least once","","as expected","self",2015-04-07 21:33:00,500,21,"laser as expected"
+9,"laser","07.04.2015","","","at least 3 times","","as expected","self",NA,500,NA,"laser as expected"
+10,"3D","","14:20","15:20","never","other","not ideal","internet",NA,400,NA,"3D not ideal"
+11,"3D","09.04.2015","","19:00","at least 3 times","","as expected","self",2015-04-09 19:00:00,500,19,"3D as expected"
+12,"laser","21.04.2015","","15:15","at least once","other","as expected","self",2015-04-21 15:15:00,500,15,"laser as expected"
+13,"laser","09.04.2015","","18:05","","","as expected","self",2015-04-09 18:05:00,500,18,"laser as expected"
+14,"laser","09.04.2015","","17:57","at least 3 times","other","as expected","self",2015-04-09 17:57:00,500,17,"laser as expected"
+15,"laser","08.04.2015","16:45","17:06","at least 3 times","business","as expected","self",2015-04-08 17:06:00,500,17,"laser as expected"
+16,"laser","09.04.2015","","16:43","at least once","","as expected","self",2015-04-09 16:43:00,500,16,"laser as expected"
+17,"laser","08.04.2015","17:40","17:50","at least 3 times","business","as expected","other",2015-04-08 17:50:00,500,17,"laser as expected"
+18,"laser","09.04.2015","","15:00","at least 3 times","other","as expected","self",2015-04-09 15:00:00,500,15,"laser as expected"
+19,"laser","02.04.2015","","","at least 3 times","","as expected","self",NA,500,NA,"laser as expected"
+20,"3D","09.04.015","","15:30","at least once","","as expected","self",0015-04-09 15:30:00,500,15,"3D as expected"
+21,"laser","19.03.2015","","18:07","at least 3 times","other","as expected","self",2015-03-19 18:07:00,500,18,"laser as expected"
+22,"cnc","19.03.2015","","17:25","at least once","","as expected","self",2015-03-19 17:25:00,500,17,"cnc as expected"
+23,"laser","26.03.2015","","14:30","at least 3 times","","as expected","self",2015-03-26 14:30:00,500,14,"laser as expected"
+24,"3D","26.03.2015","","15:49","at least 3 times","","as expected","self",2015-03-26 15:49:00,500,15,"3D as expected"
+25,"cnc","26.03.2015","","18:00","at least once","","not ideal","self",2015-03-26 18:00:00,400,18,"cnc not ideal"
+26,"laser","31.03.2015","","15:00","never","","as expected","self",2015-03-31 15:00:00,500,15,"laser as expected"
+27,"laser","31.03.2015","","","never","","as expected","self",NA,500,NA,"laser as expected"
+28,"laser","31.03.2015","","17:06","never","","as expected","self",2015-03-31 17:06:00,500,17,"laser as expected"
+29,"laser","31.03.2015","","15:20","never","","as expected","self",2015-03-31 15:20:00,500,15,"laser as expected"
+30,"laser","31.03.2015","","18:10","at least once","","as expected","self",2015-03-31 18:10:00,500,18,"laser as expected"
+31,"laser","02.04.2015","","15:09","never","","as expected","self",2015-04-02 15:09:00,500,15,"laser as expected"
+32,"cnc","02.04.2015","","16:22","at least 3 times","","as expected","self",2015-04-02 16:22:00,500,16,"cnc as expected"
+33,"laser","02.04.2015","","17:19","at least 3 times","","as expected","self",2015-04-02 17:19:00,500,17,"laser as expected"
+34,"3D","07.04.2015","","18:30","at least 3 times","","as expected","self",2015-04-07 18:30:00,500,18,"3D as expected"
+36,"laser","16.04.2015","","18:20","never","education","as expected","self",2015-04-16 18:20:00,500,18,"laser as expected"
+37,"laser","23.04.2015","","18:54","never","other","as expected","self",2015-04-23 18:54:00,500,18,"laser as expected"
+38,"laser","23.04.2015","","18:37","never","other","not ideal","self",2015-04-23 18:37:00,400,18,"laser not ideal"
+39,"laser","16.04.2015","","17:30","never","other","as expected","self",2015-04-16 17:30:00,500,17,"laser as expected"
+40,"laser","23.04.2015","","15:45","never","business","as expected","self",2015-04-23 15:45:00,500,15,"laser as expected"
+41,"laser","23.04.2015","","18:25","at least 3 times","other","as expected","self",2015-04-23 18:25:00,500,18,"laser as expected"
