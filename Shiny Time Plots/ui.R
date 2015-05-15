@@ -37,11 +37,11 @@ shinyUI(fluidPage(
       sliderInput("limits", label= h3("Minimum/maximum value on y axis"),
                   min = 0, max = 1023, value = c(0, 1023)),
       checkboxGroupInput("printerVar", label = h3("3D printer sensors"),
-                   choices = colnames(printer)[4:ncol(printer)-1],
+                   choices = colnames(printer)[3:ncol(printer)-1],
                    selected = "acc_board_x"
       ),
       checkboxGroupInput("cncVar", label = h3("CNC mill sensors"),
-                         choices = colnames(cnc)[4:ncol(cnc)-1]
+                         choices = colnames(cnc)[3:ncol(cnc)-1]
       ),
       checkboxGroupInput("laserVar", label = h3("Laser cutter sensors"),
                    choices = colnames(laser)[4:ncol(laser)-1],

@@ -17,3 +17,7 @@ cnc$timestamp <- as.POSIXct(cnc$timestamp, format="%Y-%m-%d %H:%M:%S")
 #### IMPORT SURVEY DATA ####
 survey <- read.csv("survey.csv", header=TRUE)
 survey$timestamp <- as.POSIXct(survey$timestamp, format="%Y-%m-%d %H:%M:%S")
+
+#### IMPORT SCREENSHOT DATA ####
+screenshots <- read.csv("screenshots.csv", header=TRUE)
+screenshots$timestamp <- as.POSIXct(screenshots$date, format="%m_%d_%H_%M_%S")
